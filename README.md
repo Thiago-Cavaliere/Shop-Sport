@@ -14,12 +14,19 @@ React.js ⚛️
 ## 🎯 Funcionalidades
 
 🛒 Catálogo de produtos com imagens interativas
+
 🔍 Barra de busca para facilitar a navegação
+
 📱 Design totalmente responsivo
+
 🌟 Navegação intuitiva com links para seções principais
+
 🛍️ Botão "Shop Now!" chamativo para ação
+
 📦 Layout limpo e otimizado para a melhor experiência de compra
+
 🎮 Visibilidade de produtos com destaque visual
+
 
 Link do projeto: https://sport-hub-site.vercel.app/
 ## 📸 GIF do Projeto:
