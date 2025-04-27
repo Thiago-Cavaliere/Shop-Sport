@@ -1,0 +1,350 @@
+/* Contêiner geral */
+.home__container {
+  background-color: #000;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden; /* Previne que elementos ultrapassem os limites */
+}
+
+/* Imagem de fundo */
+.home__container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #213d7d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo__top {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.logo__bottom {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-family: josefin, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav__links li a {
+  color: #5f85db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav__links li a:hover {
+  text-decoration: underline;
+}
+.nav__links li {
+  margin-bottom: 0.5rem; /* adiciona espaço se quebrar para segunda linha */
+}
+
+/* Seção de Busca */
+.search__container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 40%;
+  gap: 1rem;
+}
+
+.search__icon {
+  width: 30px;
+  height: 30px;
+  color: #5f85db;
+}
+
+.search__input {
+  padding: 0.5rem;
+  border: 1px;
+  font-size: 1rem;
+}
+
+.search__button {
+  padding: 0.5rem 1rem;
+  background-color: #5f85db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.search__button:hover {
+  background-color: #4a74b8;
+}
+
+/* Telas grandes e médias */
+@media (min-width: 769px) {
+  .images-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .rectangle-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .yellow-rectangle {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* Telas pequenas e médias */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Ajuste de padding para telas médias */
+  }
+
+  .navbar .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .images-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas pequenas */
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .rectangle-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .yellow-rectangle {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta a imagem sem distorcer */
+  }
+  .nav__links {
+    gap: 1rem; /* reduz o espaço entre os links */
+    font-size: 0.9rem; /* diminui o tamanho da fonte */
+    flex-wrap: wrap; /* permite que quebrem linha se necessário */
+    justify-content: center; /* centraliza os links se quebrar */
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 280px) {
+  .navbar {
+    padding: 0.5rem; /* Ajuste o padding para telas muito pequenas */
+  }
+
+  .search__container {
+    gap: 0.8rem;
+  }
+
+  .search__input {
+    font-size: 0.9rem;
+  }
+
+  .nav__links li a {
+    font-size: 1rem;
+  }
+
+  /* Ajustes para a seção de imagens em telas muito pequenas */
+  .images-section {
+    grid-template-columns: 1fr; /* 1 coluna para telas menores */
+  }
+
+  .rectangle-container {
+    margin-bottom: 1rem;
+  }
+
+  .overlay-image {
+    object-fit: contain; /* Para evitar distorção e manter as proporções */
+  }
+}
+
+/* Centralização do conteúdo principal */
+.home__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.home__title1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #5f85db;
+  font-family: "Racing Sans One", sans-serif;
+}
+.highlight {
+  color: #5f85db; /* Cor azul do PLAY */
+}
+
+.home__title {
+  font-size: 4rem;
+  margin: 0;
+  font-family: "Racing Sans One", sans-serif;
+  color: white; /* Cor do READY TO */
+}
+
+.home__description {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* retangulos */
+.rectangle-container {
+  position: relative;
+  display: inline-block;
+}
+
+.yellow-rectangle {
+  display: block;
+  width: 100%;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.rectangle-container {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Animação nas imagens */
+.images-section .rectangle-container {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* Agora damos delay diferente pra cada imagem aparecer separadamente */
+.images-section .rectangle-container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.images-section .rectangle-container:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.images-section .rectangle-container:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.images-section .rectangle-container:nth-child(4) {
+  animation-delay: 6s;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.shop-now-button {
+  background-color: #ffffff;
+  color: #5f85db;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shop-now-button:hover {
+  background-color: #5f85db;
+  color: #ffffff;
+}
