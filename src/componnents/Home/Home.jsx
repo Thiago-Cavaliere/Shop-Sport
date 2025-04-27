@@ -51,54 +51,38 @@ export default function Home() {
           <section className="images-section">
             <div className="rectangle-container">
               <img
-                src="../../../public/RectangleYellow.png"
+                src="/RectangleYellow.png"
                 alt=""
                 className="yellow-rectangle"
               />
-              <img
-                src="../../../public/pngegg17.png"
-                alt=""
-                className="overlay-image"
-              />
+              <img src="/pngegg17.png" alt="" className="overlay-image" />
             </div>
 
             <div className="rectangle-container">
               <img
-                src="../../../public/RectangleBlue.png"
+                src="RectangleBlue.png"
                 alt=""
                 className="yellow-rectangle"
               />
-              <img
-                src="../../../public/pngegg18.png"
-                alt=""
-                className="overlay-image"
-              />
+              <img src="pngegg18.png" alt="" className="overlay-image" />
             </div>
 
             <div className="rectangle-container">
               <img
-                src="../../../public/RectangleWhite.png"
+                src="RectangleWhite.png"
                 alt=""
                 className="yellow-rectangle"
               />
-              <img
-                src="../../../public/SeekPng2.png"
-                alt=""
-                className="overlay-image"
-              />
+              <img src="SeekPng2.png" alt="" className="overlay-image" />
             </div>
 
             <div className="rectangle-container">
               <img
-                src="../../../public/RectangleOrange.png"
+                src="RectangleOrange.png"
                 alt=""
                 className="yellow-rectangle"
               />
-              <img
-                src="../../../public/PngItem14348.png"
-                alt=""
-                className="overlay-image"
-              />
+              <img src="PngItem14348.png" alt="" className="overlay-image" />
             </div>
           </section>
 
