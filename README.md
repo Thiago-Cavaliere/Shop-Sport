@@ -1,12 +1,27 @@
-# React + Vite
+# CΛVΛLIΞRE #
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SPORT HUB #
+Bem-vindo ao Sport Hub, o site de e-commerce dedicado aos entusiastas de esportes! Aqui você encontra uma ampla variedade de produtos esportivos, desde acessórios até equipamentos, com uma interface moderna e responsiva.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
+React.js ⚛️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite ⚡
+- CSS3 com responsividade 📱
+- Font Awesome
+- Google Fonts (Racing Sans One, Josefin Sans)
 
-## Expanding the ESLint configuration
+## 🎯 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛒 Catálogo de produtos com imagens interativas
+🔍 Barra de busca para facilitar a navegação
+📱 Design totalmente responsivo
+🌟 Navegação intuitiva com links para seções principais
+🛍️ Botão "Shop Now!" chamativo para ação
+📦 Layout limpo e otimizado para a melhor experiência de compra
+🎮 Visibilidade de produtos com destaque visual
+
+Link do projeto: https://sport-hub-site.vercel.app/
+## 📸 GIF do Projeto:
+![Demonstração do Projeto](./public/assets/Ready.gif)
+
