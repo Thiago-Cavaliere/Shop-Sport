@@ -28,7 +28,10 @@ React.js ⚛️
 🎮 Visibilidade de produtos com destaque visual
 
 
-Link do projeto: [ https://sport-hub-site.vercel.app/](https://shop-sport-rho.vercel.app/)
+Link do projeto: <a href="https://shop-sport-rho.vercel.app/" target="_blank" rel="noopener noreferrer">
+  Acessar Projeto
+</a>
+
 ## 📸 GIF do Projeto:
 ![Demonstração do Projeto](./public/assets/Ready.gif)
 
